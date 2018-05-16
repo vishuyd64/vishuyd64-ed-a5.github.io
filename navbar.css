@@ -1,0 +1,135 @@
+:root {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 2vw;
+}
+.card {
+    box-shadow: 0px 0px 20px 1px #564;
+    min-height:90vh;
+    width:auto;
+    height: auto;
+    background-color: black;
+    border-radius: 0px;
+    padding-left: 3vw;
+    
+}
+.heading {
+	text-align: center;
+	 font-size: 4rem;
+    color: orange;
+    font-family: "Raleway";
+}
+
+ .navbar {
+ 	display: flex;
+    flex-direction:row;
+    margin-left: 11vw;
+    font-size: 2rem;
+    overflow-wrap: none;
+
+ }
+ .navbar .nav {
+    font-size: 1.5rem;
+    font-weight: 50;
+    margin-right: 2vw;
+    text-decoration-line: none;
+    color: green;
+    font-family: "Raleway";
+}
+.navbar ul{	
+    display: inline-flex;
+}
+
+.dropdown-menu { 
+    position:relative;
+    text-align: left;
+    font-size: 1.1rem;
+    width: 9rem;
+    padding: .8rem;
+    background-color:skyblue ; 
+}
+.dropdown-item {
+    text-decoration-line: none;
+    font-weight:800;
+    color:green;
+    white-space:nowrap;
+}
+.liner{
+	background-color: black;
+	height: 2px;	
+}
+ .n1 {
+    display: flex;
+    flex-direction: row;
+}
+.n1 .search-bar {
+    padding-left: 1vw; 
+    margin-right: 1vw;
+    margin-left: 2vw;
+    width:16vw;
+    height: 6vh; 
+    border-radius: 7px;
+    border-color: red;
+    border-width: 1px; 
+    font-size: 1.2rem;
+    font-family: "Raleway";
+}
+.n1 .btn {
+    color: green; 
+    border-radius: 4px;
+    border-color: green;
+    border-width: 1px; 
+    width:auto;
+    height: 6vh;
+    font-size: 1.2rem;
+    font-family: "Raleway";
+}
+.n1 .btn:hover {
+    color: white; 
+    background-color:  green;   
+}
+.nav:hover {
+    color:skyblue;
+}
+@media only screen and (min-width: 326px) and (max-width: 1036px) {
+    .heading {
+        font-size: 3rem;
+    }
+    .navbar { 
+        flex-direction:column;
+    }
+    .navbar ul {
+        display:table-column-group;
+    }
+    .navbar ul li {
+        padding-top: 1vh;
+    }
+    .nav {
+        font-size: 1.2rem;
+    }
+    .dropdown-menu {
+        font-size: 1.2rem;
+        display: block;
+    }
+    .navbar .n1 {
+        flex-direction: column;
+    }
+    .n1 .search-bar {
+        font-size: 0.9rem;
+        margin: 1vw;
+        width: 32vw;
+    }
+    .n1 .btn {
+        font-size: 1.4rem;
+        margin: 1vw;
+        width: 16vw;
+
+    }
+}

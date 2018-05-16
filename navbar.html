@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--stylesheets-->
+	<link rel="stylesheet" type="text/css" href="Navbar.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	
+	<!--fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Quicksand|Raleway" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	<title>Navbar</title>
+</head>
+<body>
+	<div class="container">
+		<div class="card">
+			<h1 class="heading">Navbar component</h1>
+
+
+			<nav class="navbar">
+				<ul class="navbar-nav mr-auto">
+				   <li><a href="#" class="nav">Navbar</a></li>
+			 	   <li><a href="#" class="nav">Home</a></li>
+               
+                   <li><a href="#" class="nav">Link</a></li>
+
+                   <li><a href="#" class="nav" id="navid" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown ▼</a>
+                   	<div class="dropdown-menu" id="drop" aria-labelledby="navid">
+                   		<a href="#" class="dropdown-item">Action</a>
+                   		<a href="#" class="dropdown-item">Another action</a>
+                   		<div class="dropdown-div"></div><br>
+                   		<div class="liner"></div>
+                   		<a href="#" class="dropdown-item">Something else here</a>
+                   	</div></li>
+                  <li>
+                  	<a href="#" class="nav" style="color: #b9b9b9;">Disabled</a>
+                  </li>
+                  <form class="nav n1">
+                  	<input class="search-bar" type="search" placeholder="Search" aria-label="Search">
+                  	<button class="btn" type="Submit"> Search</button>
+                  </form>
+                 </ul>
+			</nav>
+		</div>
+	</div>
+
+
+	<script src="jquery-3.3.1.min.js"></script>
+    <script src="navbar.js"></script>
+</body>
+</html>
